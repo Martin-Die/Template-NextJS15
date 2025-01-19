@@ -1,5 +1,4 @@
 import NotFoundPage from '@/components/content/notFoundPage';
-import { routing } from '@/i18n/routing';
 
 // This page renders when a route like `/unknown.txt` is requested.
 // In this case, the layout at `app/[locale]/layout.tsx` receives

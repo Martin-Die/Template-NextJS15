@@ -2,7 +2,6 @@
 
 import Header from "@/components/content/header";
 import Footer from "@/components/content/footer";
-import Image from 'next/image';
 
 const Contact = () => {
     return (

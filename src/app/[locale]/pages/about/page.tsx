@@ -25,7 +25,7 @@ const About: React.FC = () => {
                         height={200}
                         className="profile-image"
                     />
-                    <p className="intro">Je suis un développeur passionné par la création d'applications web innovantes et performantes.</p>
+                    <p className="intro">Je suis un développeur passionné par la création d&aposapplications web innovantes et performantes.</p>
                 </section>
 
                 <section className="skills">
