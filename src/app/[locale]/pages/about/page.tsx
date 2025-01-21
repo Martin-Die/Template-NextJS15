@@ -19,8 +19,8 @@ const About: React.FC = () => {
                 <section className="hero">
                     <h1>À propos de moi</h1>
                     <Image
-                        src="/path-to-your-profile-image.jpg"
-                        alt="Votre nom"
+                        src="/images/shadu.png"
+                        alt="Votre image de profile"
                         width={200}
                         height={200}
                         className="profile-image"
