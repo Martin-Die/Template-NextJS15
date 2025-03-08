@@ -20,7 +20,7 @@ const PageNotFound = () => {
     <div className="page-not-found">
       <h1>{t('title')}</h1>
       <Image
-        src="/images/image.png"
+        src="https://template-next-js-15.vercel.app/images/image.jpg"
         alt="Image not found"
         width={250}
         height={250}
@@ -30,7 +30,6 @@ const PageNotFound = () => {
       <div className="button-container">
         <a onClick={handleGoBack}>{t('button-go-back')}</a>
         <Link href='/'>{t('button-go-home')}</Link>
-        <Link href='/7'>???????</Link>
       </div>
     </div>
   );
