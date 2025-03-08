@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         default: 'Template App - A Modern Next.js App',
         template: '%s | Template App'
     },
-    description: 'A modern application built with Next.js, delivering an exceptional user experience',
+    description: 'A modern application built with Next.js',
     applicationName: 'Template App',
     authors: [{ name: 'Your Name', url: 'https://your-website.com' }],
     generator: 'Next.js',

@@ -6,13 +6,13 @@ import { useTranslations } from 'next-intl';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About',
+    title: {
+        default: 'About',
+        template: '%s | Template App'
+    },
     description: 'This the about page',
     openGraph: {
-        title: {
-            default: 'About',
-            template: '%s | Template App'
-        },
+        title: 'About',
         description: 'This the about page',
         url: 'https://example.com/custom-page',
         type: 'website',
