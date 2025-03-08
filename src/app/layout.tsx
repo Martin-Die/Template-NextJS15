@@ -36,14 +36,14 @@ export const metadata: Metadata = {
         url: 'https://your-domain.com',
         images: [
             {
-                url: '/images/image.jpg',
+                url: 'https://template-next-js-15.vercel.app/images/image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Template App Preview',
                 type: 'image/jpeg',
             },
             {
-                url: '/images/image.jpg',
+                url: 'https://template-next-js-15.vercel.app/images/image.jpg',
                 width: 600,
                 height: 600,
                 alt: 'Template App Preview Square',

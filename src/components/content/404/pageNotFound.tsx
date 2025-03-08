@@ -20,7 +20,7 @@ const PageNotFound = () => {
     <div className="page-not-found">
       <h1>{t('title')}</h1>
       <Image
-        src="/images/shadu.png"
+        src="/images/image.png"
         alt="Image not found"
         width={250}
         height={250}
