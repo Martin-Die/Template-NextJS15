@@ -4,6 +4,12 @@ import Footer from '@/components/content/footer';
 import Image from 'next/image';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'About',
+    description: 'This is the about page.',
+};
 
 const About: React.FC = () => {
 
