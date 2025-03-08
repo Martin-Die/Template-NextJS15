@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         site: '@youraccount',
         creator: '@youraccount',
         title: 'Template App - A Modern Next.js App',
-        description: 'A modern application built with Next.js, delivering an exceptional user experience',
+        description: 'A modern application built with Next.js',
         images: [{
             url: 'https://template-next-js-15.vercel.app/images/image.jpg',
             alt: 'Template App Preview',
