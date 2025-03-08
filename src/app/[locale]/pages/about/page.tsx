@@ -6,19 +6,16 @@ import { useTranslations } from 'next-intl';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About - Template',
+    title: 'About',
     description: 'This the about page',
     openGraph: {
-        title: 'About',
+        title: {
+            default: 'About',
+            template: '%s | Template App'
+        },
         description: 'This the about page',
         url: 'https://example.com/custom-page',
         type: 'website',
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'About',
-        description: 'This the about page',
-        images: ['https://template-next-js-15.vercel.app/images/image.jpg'],
     },
 };
 
