@@ -16,12 +16,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     metadataBase: new URL('https://your-domain.com'),
     title: {
+        template: '%s | Template App',
         default: 'Template App - A Modern Next.js App',
-        template: '%s | Template App'
     },
     description: 'A modern application built with Next.js',
     applicationName: 'Template App',
     authors: [{ name: 'Your Name', url: 'https://your-website.com' }],
+    creator: 'Name here',
+    publisher: 'Name here',
     generator: 'Next.js',
     keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Template', 'Web Development'],
     referrer: 'origin-when-cross-origin',
@@ -31,7 +33,10 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         siteName: 'Template App',
-        title: 'Template App - A Modern Next.js App',
+        title: {
+            template: '%s | Template App',
+            default: 'Template App - A Modern Next.js App',
+        },
         description: 'A modern application built with Next.js, delivering an exceptional user experience',
         url: 'https://your-domain.com',
         images: [
