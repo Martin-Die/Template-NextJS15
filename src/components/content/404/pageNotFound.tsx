@@ -20,7 +20,7 @@ const PageNotFound = () => {
     <div className="page-not-found">
       <h1>{t('title')}</h1>
       <Image
-        src="https://template-next-js-15.vercel.app/images/image.jpg"
+        src="/images/image.jpg"
         alt="Image not found"
         width={250}
         height={250}
