@@ -1,0 +1,36 @@
+{
+    "Header": {
+        "website": "My website",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "Footer": {
+        "copyright": "2024 Website. All rights reserved."
+    },
+    "NotFoundPage": {
+        "title": "Page not found",
+        "description": "The website is still under development, so it is still incomplete",
+        "button-go-back": "You can go back",
+        "button-go-home": "Or go to menu"
+    },
+    "HomePage": {
+        "title": "Welcome to this template",
+        "description": "I tried to make a nextJS 15 Template as easy to handle for anyone"
+    },
+    "About": {
+        "title": "About you",
+        "description": "Tell more about yourself."
+    },
+    "Contact": {
+        "title": "Contact me",
+        "description": "This page is just an example, the form does not work.",
+        "name": "Name",
+        "name_placeholder": "Your name",
+        "mail": "Email",
+        "mail_placeholder": "Your email",
+        "message": "Message",
+        "message_placeholder": "Your message...",
+        "send": "Send"
+    }
+}

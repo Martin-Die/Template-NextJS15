@@ -1,0 +1,176 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+$background-color: #f4f4f4;
+$bg-color: #282c34;
+$text-color: white;
+$hover-color: #61dafb;
+$hover-color-light: #83e1fb;
+$padding: 50px;
+$font-family: 'Arial', sans-serif;
+$image-size: 10%;
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+header {
+  padding: 10px;
+  background: #333333;
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 20px;
+  background: #333;
+  color: white;
+  text-align: center;
+
+  .social-icons {
+    a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: white;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: $padding;
+  background-color: $bg-color;
+  color: $text-color;
+  text-align: center;
+  min-height: 75vh;
+
+  .presentation-img {
+    width: $image-size;
+    height: $image-size;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+
+    a {
+      color: $text-color;
+      font-size: 24px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(40, 44, 52, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: $text-color;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    padding: 12px 15px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $text-color;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+      border-color: $hover-color;
+      box-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+    min-width: 300px;
+    max-width: 950px;
+    resize: both;
+  }
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: $hover-color;
+  color: $bg-color;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color-light;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Ajout de styles de validation
+input:valid,
+textarea:valid {
+  border-color: green;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: red;
+}
