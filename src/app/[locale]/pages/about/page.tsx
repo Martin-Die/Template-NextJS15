@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'This the about page',
+        title: 'About',
         description: 'This the about page',
         images: ['https://template-next-js-15.vercel.app/images/image.jpg'],
     },
