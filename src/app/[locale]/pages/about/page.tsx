@@ -2,13 +2,24 @@ import React from 'react';
 import Header from '@/components/content/header';
 import Footer from '@/components/content/footer';
 import Image from 'next/image';
-import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About',
-    description: 'This is the about page.',
+    title: 'About - Template',
+    description: 'This the about page',
+    openGraph: {
+        title: 'About',
+        description: 'This the about page',
+        url: 'https://example.com/custom-page',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'This the about page',
+        description: 'This the about page',
+        images: ['https://template-next-js-15.vercel.app/images/image.jpg'],
+    },
 };
 
 const About: React.FC = () => {
@@ -17,20 +28,6 @@ const About: React.FC = () => {
 
     return (
         <>
-            <Head>
-                <meta property="og:title" content="Titre personnalisé de la page" />
-                <meta property="og:description" content="Description personnalisée de la page" />
-                <meta property="og:image" content="/images/custom-og-image.jpg" />
-                <meta property="og:url" content="https://example.com/custom-page" />
-                <meta property="og:type" content="website" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Titre personnalisé de la page" />
-                <meta name="twitter:description" content="Description personnalisée de la page" />
-                <meta name="twitter:image" content="/images/custom-og-image.jpg" />
-
-                <meta name="description" content="Description personnalisée de la page" />
-            </Head>
             <Header />
             <main className="container about-page">
                 <section className="hero">
