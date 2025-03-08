@@ -61,13 +61,13 @@ export const metadata: Metadata = {
         creator: '@youraccount',
         title: 'Template App - A Modern Next.js App',
         description: 'A modern application built with Next.js, delivering an exceptional user experience',
-        images: {
+        images: [{
             url: 'https://template-next-js-15.vercel.app/images/image.jpg',
             alt: 'Template App Preview',
             width: 1200,
             height: 600,
             type: 'image/jpeg',
-        },
+        }],
     },
 
     // Autres métadonnées sociales
