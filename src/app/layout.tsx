@@ -123,34 +123,16 @@ export const metadata: Metadata = {
         title: 'Template App',
         startupImage: [
             {
-                url: '/splash/apple-splash-2048-2732.jpg',
+                url: 'https://template-next-js-15.vercel.app/images/image.jpg',
                 media: '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)',
             },
             {
-                url: '/splash/apple-splash-1668-2388.jpg',
+                url: 'https://template-next-js-15.vercel.app/images/image.jpg',
                 media: '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)',
             },
             {
-                url: '/splash/apple-splash-1536-2048.jpg',
+                url: 'https://template-next-js-15.vercel.app/images/image.jpg',
                 media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)',
-            },
-        ],
-    },
-    icons: {
-        icon: [
-            { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-            { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-            { url: '/icons/favicon.ico', sizes: '48x48' },
-        ],
-        shortcut: ['/shortcut-icon.png'],
-        apple: [
-            { url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-        ],
-        other: [
-            {
-                rel: 'mask-icon',
-                url: '/icons/safari-pinned-tab.svg',
-                color: '#000000',
             },
         ],
     },
