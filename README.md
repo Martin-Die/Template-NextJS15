@@ -25,15 +25,6 @@ This template is a modern and robust foundation for developing web applications 
 - Optimized TypeScript configuration
 - Turbopack support for faster development
 
-### 📊 Performance Monitoring
-- Web Vitals integration for performance metrics
-- Real-time monitoring of:
-  - CLS (Cumulative Layout Shift)
-  - FID (First Input Delay)
-  - FCP (First Contentful Paint)
-  - LCP (Largest Contentful Paint)
-  - TTFB (Time to First Byte)
-
 ## 🚦 Prerequisites
 - Node.js (LTS version recommended)
 - npm or yarn
@@ -64,7 +55,6 @@ yarn install
 │   ├── app/         # Next.js app directory
 │   ├── components/  # React components
 │   ├── i18n/        # Internationalization files
-│   └── reportWebVitals.ts  # Performance monitoring
 ├── public/           # Static files
 ├── messages/         # Translation files
 ├── .next/           # Next.js build
