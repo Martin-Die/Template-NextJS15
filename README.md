@@ -18,13 +18,21 @@ This template is a modern and robust foundation for developing web applications 
 
 ### 🎨 UI/UX
 - FontAwesome integration for icons
-- P5.js support for animations and visualizations
 - CLSX for conditional class management
 
 ### 🛡 Code Quality
 - ESLint configured for linting
 - Optimized TypeScript configuration
 - Turbopack support for faster development
+
+### 📊 Performance Monitoring
+- Web Vitals integration for performance metrics
+- Real-time monitoring of:
+  - CLS (Cumulative Layout Shift)
+  - FID (First Input Delay)
+  - FCP (First Contentful Paint)
+  - LCP (Largest Contentful Paint)
+  - TTFB (Time to First Byte)
 
 ## 🚦 Prerequisites
 - Node.js (LTS version recommended)
@@ -52,11 +60,15 @@ yarn install
 ## 📁 Project Structure
 
 ```
-├── .next/           # Next.js build
-├── messages/         # Translation files
-├── node_modules/    # Dependencies
+├── src/              # Main source code
+│   ├── app/         # Next.js app directory
+│   ├── components/  # React components
+│   ├── i18n/        # Internationalization files
+│   └── reportWebVitals.ts  # Performance monitoring
 ├── public/           # Static files
-└── src/              # Main source code
+├── messages/         # Translation files
+├── .next/           # Next.js build
+└── node_modules/    # Dependencies
 ```
 
 ## 🔧 Configuration
