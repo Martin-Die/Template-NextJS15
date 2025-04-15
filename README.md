@@ -52,11 +52,11 @@ yarn install
 ## 📁 Project Structure
 
 ```
-├── src/              # Main source code
-├── public/           # Static files
-├── messages/         # Translation files
 ├── .next/           # Next.js build
-└── node_modules/    # Dependencies
+├── messages/         # Translation files
+├── node_modules/    # Dependencies
+├── public/           # Static files
+└── src/              # Main source code
 ```
 
 ## 🔧 Configuration
