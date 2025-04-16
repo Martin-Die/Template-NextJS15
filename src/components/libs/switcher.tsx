@@ -8,15 +8,24 @@ const LanguageSwitcher = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('en');
 
     useEffect(() => {
-        // Récupérer la langue actuelle à partir de l'URL
+        // Récupérer la langue depuis localStorage ou l'URL
+        const savedLanguage = localStorage.getItem('preferredLanguage');
         const currentLocale = window.location.pathname.split('/')[1];
-        if (currentLocale && ['fr', 'en'].includes(currentLocale)) {
+        
+        if (savedLanguage && ['fr', 'en'].includes(savedLanguage)) {
+            setSelectedLanguage(savedLanguage);
+            if (currentLocale !== savedLanguage) {
+                router.push(`/${savedLanguage}`);
+            }
+        } else if (currentLocale && ['fr', 'en'].includes(currentLocale)) {
             setSelectedLanguage(currentLocale);
+            localStorage.setItem('preferredLanguage', currentLocale);
         }
     }, []);
 
     const changeLanguage = (locale: string) => {
         setSelectedLanguage(locale);
+        localStorage.setItem('preferredLanguage', locale);
         router.push(`/${locale}`);
     };
 
