@@ -15,18 +15,27 @@ const LanguageSwitcher = () => {
         if (savedLanguage && ['fr', 'en'].includes(savedLanguage)) {
             setSelectedLanguage(savedLanguage);
             if (currentLocale !== savedLanguage) {
-                router.push(`/${savedLanguage}`);
+                const currentPath = window.location.pathname.split('/').slice(2).join('/');
+                router.push(`/${savedLanguage}/${currentPath}`);
             }
         } else if (currentLocale && ['fr', 'en'].includes(currentLocale)) {
             setSelectedLanguage(currentLocale);
             localStorage.setItem('preferredLanguage', currentLocale);
         }
-    }, []);
+    }, [router]);
 
     const changeLanguage = (locale: string) => {
         setSelectedLanguage(locale);
         localStorage.setItem('preferredLanguage', locale);
-        router.push(`/${locale}`);
+        
+        // Préserver le chemin actuel
+        const currentPath = window.location.pathname.split('/').slice(2).join('/');
+        router.push(`/${locale}/${currentPath}`);
+        
+        // Ajouter un petit délai avant le rafraîchissement
+        setTimeout(() => {
+            window.location.reload();
+        }, 100);
     };
 
     return (
